@@ -13,7 +13,7 @@ The goal is to demonstrate semantic HTML, accessibility, responsive design, and 
 
 
 
- Pages and Features
+# Pages and Features
 
  Profile Page (index.html)
 
@@ -26,7 +26,7 @@ Uses accessible and semantic structure.
 Navigation bar links to all pages.
 
 
- About Page (about.html)
+# About Page (about.html)
 
 Includes reflective sections:
 
@@ -46,7 +46,7 @@ Fully semantic and accessible layout.
 Organized with <main> and <section> tags.
 
 
-✉ Contact Us Page (contact.html)
+# Contact Us Page (contact.html)
 
 Contains a form with the following fields:
 
