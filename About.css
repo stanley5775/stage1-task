@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #111;
+}
+header{
+  background-color: #111827;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+/* navigations */
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a{
+  color: #f9fafb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+nav a:hover, nav a:focus{
+  color: #6366f1;
+  transform: scale(1.05);
+  outline: none;
+}
+
+main[data-testid="test-about-page"] {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+section {
+  background-color: #f8fafc;
+  color: #111827;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}

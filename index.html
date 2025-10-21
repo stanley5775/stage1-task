@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav-links" data-testid="test-navigations">
+        <ul>
+          <li>
+            <a href="/index.html" data-testid="test-nav-contact">Profile</a>
+          </li>
+          <li>
+            <a href="/About.html" data-testid="test-nav-contact">About</a>
+          </li>
+          <li>
+            <a href="/Contact.html" data-testid="test-nav-contact"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article data-testid="test-profile-card" class="profile-card">
+        <header class="card-header">
+          <figure class="avatar">
+            <img
+              src="https://res.cloudinary.com/dfiq8y8qq/image/upload/v1760715246/profile_gjpjvy.jpg"
+              alt="Profile avatar"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+          <div>
+            <h2 data-testid="test-user-name">Stanley ibekwe</h2>
+            <p data-testid="test-user-bio">
+              Frontend dev, who loves building clean, responsive, and
+              user-friendly sites using html, css, javaScript and react.
+            </p>
+            <p class="time">
+              Current Time (ms):
+              <span id="currentTime" data-testid="test-user-time"></span>
+            </p>
+          </div>
+        </header>
+
+        <section class="social">
+          <h3>Connect</h3>
+          <nav aria-label="Social links" data-testid="test-user-social-links">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/stanley5775"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                >
+                  <button class="btn github">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                  </button>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/stanley-ibekwe-10015a38a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                >
+                  <button class="btn linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                    Linked
+                  </button>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/Stanley_5775"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                >
+                  <button class="btn twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    Twitter
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies" class="tag-list">
+            <li>Gaming</li>
+            <li>Coding</li>
+            <li>Football</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes" class="tag-list">
+            <li>Procrastination</li>
+            <li>Messy code</li>
+            <li>Slow Wi-Fi</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

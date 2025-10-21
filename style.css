@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #111;
+}
+header {
+  background-color: #111827;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+/* navigations */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: #f9fafb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+nav a:hover,
+nav a:focus {
+  color: #6366f1;
+  transform: scale(1.05);
+  outline: none;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 1rem auto;
+}
+/* --- Card --- */
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  max-width: 420px;
+  width: 90%;
+  overflow: hidden;
+  padding: 1.8rem;
+}
+
+.card-header {
+  background: #000;
+  color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: cover;
+}
+
+.card-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.card-header p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 0.3rem;
+}
+
+.time {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* --- Social Buttons --- */
+.social h3 {
+  margin-bottom: 0.5rem;
+}
+
+.social ul {
+  list-style: none;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  background: #000;
+  color: #fff;
+}
+.linkedin {
+  background: #000;
+  color: #fff;
+}
+
+.twitter {
+  background: #111;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+/* --- Lists (Hobbies/Dislikes) --- */
+section h3 {
+  margin: 1.2rem 0 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+}
+
+.tag-list li {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .card-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatar img {
+    margin-bottom: 0.8rem;
+  }
+
+  .social ul {
+    justify-content: center;
+  }
+}
